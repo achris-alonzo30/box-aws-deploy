@@ -36,11 +36,11 @@ const ProductsPage = () => {
                         onChange={(e) => setQuery(e.target.value)}
                     />
                 </fieldset>
-                
+
             </aside>
             <hgroup className="flex justify-between items-center mb-6">
                 <Heading name="Popular Products" />
-                <CreateProductModal 
+                <CreateProductModal
                     isModalOpen={isModalOpen}
                     setIsModalOpen={setIsModalOpen}
                 />
@@ -52,7 +52,13 @@ const ProductsPage = () => {
                         className="border shadow rounded-md p-4 max-w-full w-full mx-auot"
                     >
                         <hgroup className="flex flex-col items-center">
-                            <Image src="" alt="" width={200} height={200} />
+                            <Image
+                                width={150}
+                                height={150}
+                                alt={d.name}
+                                className="rounded-2xl size-36 shadow-md mb-3"
+                                src={`s3-bucket-box.s3.ca-central-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                            />
                             <h3 className="text-lg font-semibold">{d.name}</h3>
                             <p>{d.price.toFixed(2)}</p>
                             <span className="text-sm text-muted-foreground mt-1">

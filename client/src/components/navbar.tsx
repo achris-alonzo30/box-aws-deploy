@@ -61,7 +61,13 @@ export const Navbar = () => {
                     <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
                     <div className="flex items-center gap-3 cursor-pointer">
                         <div className="size-9 flex items-center gap-2">
-                            <Image src="/next.svg" alt="User Profile Picture" height={32} width={32} />
+                            <Image 
+                                width={50}
+                                height={50} 
+                                alt="User Profile Picture" 
+                                className="rounded-full h-full object-cover"
+                                src="s3-bucket-box.s3.ca-central-1.amazonaws.com/profile.jpeg"  
+                            />
                         </div>
                     </div>
                 </aside>

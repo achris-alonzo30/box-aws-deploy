@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const CardPopularProducts = () => {
     const { data: dashboard, isLoading } = useGetDashboardQuery();
-    
+
     return (
         <article className="row-span-3 xl:row-span-6 shadow-md rounded-2xl pb-16">
             {isLoading ? (
@@ -26,7 +26,13 @@ export const CardPopularProducts = () => {
                                 className="flex items-center justify-between gap-3 px-5 py-7 border-b"
                             >
                                 <div className="flex items-center gap-3">
-                                    <Image src="" alt="" />
+                                    <Image
+                                        width={50}
+                                        height={50}
+                                        alt={product.name}
+                                        className="rounded-lg size-14 shadow-md"
+                                        src={`s3-bucket-box.s3.ca-central-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                                    />
                                     <div className="flex flex-col justify-between gap-1">
                                         <hgroup className="font-bold text-gray-700">
 
