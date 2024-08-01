@@ -72,7 +72,7 @@ const Expenses = () => {
     const classNames = {
         label: "block text-sm font-medium text-gray-700",
         selectInput:
-            "mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md",
+            "mt-1 block w-full pl-3 pr-10 py-2 text-base focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md",
     };
 
     if (isLoading) {
@@ -99,7 +99,7 @@ const Expenses = () => {
 
             {/* FILTERS */}
             <div className="flex flex-col md:flex-row justify-between gap-4">
-                <div className="w-full md:w-1/3 bg-white shadow rounded-lg p-6">
+                <div className="w-full md:w-1/3 shadow rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-4">
                         Filter by Category and Date
                     </h3>
@@ -151,7 +151,7 @@ const Expenses = () => {
                     </div>
                 </div>
                 {/* PIE CHART */}
-                <div className="flex-grow bg-white shadow rounded-lg p-4 md:p-6">
+                <div className="flex-grow shadow rounded-lg p-4 md:p-6">
                     <ResponsiveContainer width="100%" height={400}>
                         <PieChart>
                             <Pie
