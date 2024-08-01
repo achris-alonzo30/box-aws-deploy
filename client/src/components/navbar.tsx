@@ -66,7 +66,7 @@ export const Navbar = () => {
                                 height={50} 
                                 alt="User Profile Picture" 
                                 className="rounded-full h-full object-cover"
-                                src="s3-bucket-box.s3.ca-central-1.amazonaws.com/profile.jpeg"  
+                                src="https://s3-bucket-box.s3.ca-central-1.amazonaws.com/profile.jpeg"  
                             />
                         </div>
                     </div>

@@ -31,7 +31,7 @@ export const CardPopularProducts = () => {
                                         height={50}
                                         alt={product.name}
                                         className="rounded-lg size-14 shadow-md"
-                                        src={`s3-bucket-box.s3.ca-central-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                                        src={`https://s3-bucket-box.s3.ca-central-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
                                     />
                                     <div className="flex flex-col justify-between gap-1">
                                         <hgroup className="font-bold text-gray-700">
