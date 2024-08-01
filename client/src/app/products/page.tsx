@@ -57,7 +57,7 @@ const ProductsPage = () => {
                                 height={150}
                                 alt={d.name}
                                 className="rounded-2xl size-36 shadow-md mb-3"
-                                src={`https://s3-bucket-box.s3.ca-central-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                                src={`https://s3-bucket-box.s3.ca-central-1.amazonaws.com/Product%20${Math.floor(Math.random() * 3) + 1}.png`}
                             />
                             <h3 className="text-lg font-semibold">{d.name}</h3>
                             <p>{d.price.toFixed(2)}</p>
