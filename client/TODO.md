@@ -1,0 +1,5 @@
+- [ ] Add Error page for each page
+- [ ] Change the color scheme
+- [ ] Add Skeleton when loading for each page
+- [ ] Add a delete and edit function on inventory and products page
+- [ ] Add the ability for users to upload image
